@@ -53,16 +53,20 @@ export default function Counter()
   /* STEP 1 */
   const [count, setCount] = useState(  0  );
 
-  const increment = () => 
+  const increment = (eventObj) => 
   /* STEP 4 */  
   {
-
+    setCount( count + 1 );
   };
-  const decrement = () => {
+  const decrement = (eventObj) => 
     /* STEP 5 */
+  {
+    setCount( count - 1 );
   };
-  const reset = () => {
+  const reset = (eventObj) => 
     /* STEP 6 */
+  {
+    setCount(0);
   };
 
   const style = {
